@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f1c2e;
+    color: #f5f7fa;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0b1626;
+    border-bottom: 1px solid #263852;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #f5f7fa;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4da3ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 24px 90px;
+    background: linear-gradient(135deg, #0f1c2e, #16263d);
+}
+
+.hero h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #d6dee9;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+section p {
+    color: #d6dee9;
+}
+
+.project {
+    background-color: #16263d;
+    padding: 24px;
+    margin-top: 22px;
+    border-radius: 8px;
+    border: 1px solid #263852;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    border-color: #4da3ff;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+a {
+    color: #4da3ff;
+}
+
+a:hover {
+    color: #82c0ff;
+}
+
+#cv a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: #4da3ff;
+    color: #0f1c2e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#cv a:hover {
+    background-color: #82c0ff;
+    transform: translateY(-2px);
+}
+
+#contact p {
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 80px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 45px 20px;
+    }
+
+   
+}
